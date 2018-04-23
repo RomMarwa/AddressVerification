@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="menu_address_form" model="website.menu">
+            <field name="name">New User Registration</field>
+            <field name="url">/userInformation</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">21</field>
+        </record>
+        <record id="action_open_address_form" model="ir.actions.act_url">
+            <field name="name">New User Registration</field>
+            <field name="target">self</field>
+            <field name="url">/userInformation</field>
+        </record>
+        <record id="base.open_menu" model="ir.actions.todo">
+            <field name="action_id" ref="action_open_address_form"/>
+            <field name="state">open</field>
+        </record>
+
+    </data>
+</odoo>

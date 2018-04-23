@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="website_config_settings_view_form_inherit" model="ir.ui.view">
+        <field name="name">website.config.settings.form.inherit.geonames</field>
+        <field name="model">website.config.settings</field>
+        <field name="inherit_id" ref="website_sale.website_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <group name="delivery" position="after">
+            	<group name="geonames" string="Adress Verification">
+            		<field name="geonames_url" placeholder="http://download.geonames.org/export/zip/" widget="url"/>
+            	</group>
+            </group>
+        </field>
+    </record>
+</odoo>
