@@ -10,8 +10,7 @@
     'author': "Marwa ROMDHAN",
 
     'license': "AGPL-3",
-    'summary': '''It uses Geonames to import Zip Code cities
-                And verify the the validity of zip code/city on the checkout process
+    'summary': '''It uses Geonames to verify the validity of zip code/city on the checkout process
                 ''',
     'data': [
             'data/data.xml',
